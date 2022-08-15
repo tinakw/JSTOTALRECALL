@@ -81,11 +81,7 @@
 //         }
 
 
-
-
-
-
-
+//----------------------------------------------------------------------
 // D. Savings account
 // Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account.
 // Check your work! Your bank_account should have $55 in it.
