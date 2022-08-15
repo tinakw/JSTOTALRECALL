@@ -60,7 +60,7 @@
 
 // Reverse this array using Array.prototype.reverse(). Did you mutate the array? What does mutate mean? Did the .reverse()method return anything?
 
-// Yes, the array mutated. It reverses the array in place, the first becomes the last and the first becomes the last.  Mutate means to change original Array. 
+// Yes, the array mutated. It reverses the array in place, the first becomes the last and the last becomes the first.  Mutate means to change original Array. 
 
 // ***F. Biggie Smalls
 // Create a variable that contains an integer.
@@ -76,16 +76,14 @@
 
 // console.log()s big number if the number is greater than or equal to 100.
 
-
-    
-
-
+///////////////////////////////////////////////////////////////////////////////
 // G. Monkey in the Middle
 // Write an if ... else if ... else statement:
-
-// console.log()little numberif the number entered is less than 5.
+///////////////////////////////////////////////////////////////////////////////
+// console.log()little number if the number entered is less than 5.
 // If the number entered is more than 10, log big number.
 // Otherwise, log "monkey".
+
 // let int = 4;
 // if (int < 5){
 //           console.log('little number')
@@ -95,7 +93,7 @@
 // console.log('monkey')
 // }
 
-
+/////////////////////////////////////////////////////////////////////////////////
 // H. What's in Your Closet?
 // Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript.
 
@@ -110,7 +108,8 @@ const kristynsCloset = [
 ];
 
 // // Thom's closet is more complicated. Check out this nested data structure!!
-const thomsCloset = [
+
+ const thomsCloset = [
   [
     // These are Thom's shirts
     "grey button-up",
@@ -129,17 +128,43 @@ const thomsCloset = [
     "raybans"
   ]
 ];
-// What's Kristyn wearing today? Using bracket notation to access items in kristynsCloset, log the sentence "Kristyn is rocking that " + the third item in Kristyn's closet + " today!" to the console.
+////////////////////////////////
+// // What's Kristyn wearing today? Using bracket notation to access items in kristynsCloset, log the sentence "Kristyn is rocking that " + the third item in Kristyn's closet + " today!" to the console.
 
-console.log(`Kristyn is rocking that ${kristynsCloset[3]} today!`)
-
-
+//console.log(`Kristyn is rocking that ${kristynsCloset[3]} today!`)// output => Kristyn is rocking that Per Scholas hoodie today!
 
 
 // Kristyn just bought some sweet shades! Add "raybans"to her closet after "yellow knit hat".
+
+//kristynsCloset.splice(6,0,'raybans')
+//console.log(kristynsCloset) // output ['left shoe','cowboy boots','right sock','Per Scholas hoodie','green pants','yellow knit hat','raybans','marshmallow peeps']
+
+
 // Kristyn spilled coffee on her hat... modify this item to read "stained knit hat"instead of yellow.
+
+//kristynsCloset.splice(5,1,'stained knit hat')
+
+//console.log(kristynsCloset) //output ['left shoe','cowboy boots','right sock','Per Scholas hoodie','green pants','stained knit hat','raybans','marshmallow peeps']
+
 // Put together an outfit for Thom! Using bracket notation, access the first element in Thom's shirtsarray.
+
+//console.log(thomsCloset[0][0]) //output => grey button-up
+
 // In the same way, access one item from Thom's pants array.
+
+//console.log(thomsCloset[1][2]) // output => PJs
+
 // Access one item from Thom's accessories array.
+
+//console.log(thomsCloset[2][1]) // ouput => wool scarf
+
 // Log a sentence about what Thom's wearing. Example: "Thom is looking fierce in a grey button-up, jeans and wool scarf!"
+
+//console.log(`Thom is looking fierce in a ${thomsCloset[0][2]},${thomsCloset[1][1]} and ${thomsCloset[2][2]}!`) // output => Thom is looking fierce in a light blue button-up,jeans and raybans!
+
+
 // Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to Footie Pajamas.
+
+//thomsCloset[1][2] = 'Footie Pajamas';
+//console.log(thomsCloset)      //output => [['grey button-up','dark grey button-up','light blue button-up','blue button-up'],
+//   [ 'grey jeans', 'jeans', 'Footie Pajamas' ],[ 'wool mittens', 'wool scarf', 'raybans' ] ]
