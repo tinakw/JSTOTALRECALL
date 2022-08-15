@@ -16,7 +16,8 @@
 
 // 5-What is pseudocoding and why should you do it?
 // Plain language description of the steps in algorithm or another system; it lays out the plan
-//  for writing the code.
+// for writing the code.
+
 // 6-What percentage of time should be spent thinking about how you're going to solve a problem vs actually typing in code to solve it?
 // 50% or more time should be spent thinking about solving the problem.
 
@@ -73,6 +74,7 @@
 // Declare a variable animal. Set it to be either "cow" or something else
 
 // Write code that will print out "mooooo" if the it is equal to cow
+
 
 // Change your code so that if the variable animalis anything other than a cow, it will print "Hey! You're not a cow."
 
